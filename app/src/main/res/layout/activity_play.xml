@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/activity_btn_click_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="Activitys"
+            android:textColor="@color/txt_white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="4dp">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="8dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/news_title1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The school Principal, Ms. Amita Dhaka, made the students aware about the significance of commemorating the Constitution Day."
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/news_title1"
+                        android:id="@+id/img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/d1" />
+
+
+                    <TextView
+                        android:id="@+id/news_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img"
+                        android:layout_marginTop="10dp"
+                        android:text="10 min ago"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="8dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/news_title11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The students and staff of New Millennium School-DPS Bahrain celebrated Christmas with Special Assemblies arranged at its campus."
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/news_title11"
+                        android:id="@+id/img1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/d2"/>
+
+
+                    <TextView
+                        android:id="@+id/news_time1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img1"
+                        android:layout_marginTop="10dp"
+                        android:text="50 min ago"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:elevation="8dp"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/news_title12"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="The Inter DPS Basketball Tournament Zone 4 Boys (Open) hosted by DPS Numaligarh under the aegis of DPS Society, came to an end October 21. A total of eight teams."
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:layout_below="@+id/news_title12"
+                        android:id="@+id/img2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:scaleType="matrix"
+                        android:src="@drawable/d3" />
+
+
+                    <TextView
+                        android:id="@+id/news_time2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/img2"
+                        android:layout_marginTop="10dp"
+                        android:text="3 day ago"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

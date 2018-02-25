@@ -1,0 +1,99 @@
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:background="@android:color/white"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_marginTop="40dp"
+                android:layout_gravity="center"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/logo"
+                />
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/img"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_centerInParent="true"
+                android:text="DPS KAIMUR"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/login_et_mobile"
+                    android:drawableLeft="@drawable/ic_admisstion"
+                    android:hint="@string/mobile_number"
+                    android:inputType="number"
+                    android:maxLength="10"
+                    style="@style/textView_login_signup_style" />
+
+                <EditText
+                    android:id="@+id/login_et_pass"
+                    android:drawableLeft="@drawable/ic_password"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    style="@style/textView_login_signup_style"
+                    />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:text="@string/login"
+                    style="@style/button_custom_style" />
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/btn_forgot_pass"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Forgot Password?"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/login_btn_signup"
+            android:layout_marginBottom="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/txt_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/create_login"
+            />
+    </RelativeLayout>
+
+</android.support.design.widget.CoordinatorLayout>
